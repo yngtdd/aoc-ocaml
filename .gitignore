@@ -1,0 +1,11 @@
+.fake
+.ionide
+bin
+obj
+**/obj
+.vscode
+ignore
+_build
+**/.merlin
+day00
+.DS_Store

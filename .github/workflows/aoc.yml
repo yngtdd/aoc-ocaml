@@ -13,7 +13,7 @@ jobs:
 
       - uses: joblo2213/aoc-badges-action@v3
         with:
-          userid: yngtdd
+          userid: 1571860
           session: ${{ secrets.AOC_SESSION }}
           year: 2021
           daysCompletedRegex: '(?<=https:\/\/img\.shields\.io\/badge\/days%20completed-)[0-9]+(?=-red)'

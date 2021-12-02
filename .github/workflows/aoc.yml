@@ -16,7 +16,7 @@ jobs:
           userid: 1571860
           session: ${{ secrets.AOC_SESSION }}
           year: 2021
-          daysCompletedRegex: '(?<=https:\/\/img\.shields\.io\/badge\/days%20completed-)[0-9]+(?=-red)'
+          #daysCompletedRegex: '(?<=https:\/\/img\.shields\.io\/badge\/days%20completed-)[0-9]+(?=-red)'
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:

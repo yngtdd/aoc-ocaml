@@ -7,15 +7,18 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2               
-          
+      - uses: actions/checkout@v2
+
       - uses: joblo2213/aoc-badges-action@v3
         with:
-          userid: yngtdd                         
+          userid: yngtdd
           session: ${{ secrets.AOC_SESSION }}
           year: 2021
+          daysCompletedRegex:
+            default: '(?<=https:\/\/img\.shields\.io\/badge\/days%20completed-)[0-9]+(?=-red)'
 
-      - uses: stefanzweifel/git-auto-commit-action@v4     # Step that pushes these local changes back to your github repo
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update badges
           file_pattern: README.md
+

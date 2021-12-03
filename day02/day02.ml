@@ -2,9 +2,9 @@ open Core
 open Re
 
 type coordinate = 
-    { direction : string; 
-      magnitude : int; 
-    }
+  { direction : string; 
+    magnitude : int; 
+  }
 
 let coordinate_of_string line = 
   let matches =
@@ -15,7 +15,6 @@ let coordinate_of_string line =
     magnitude = Int.of_string (Re.Group.get matches 2);
   };;
 
-
 let input = 
-    In_channel.read_lines "input.txt"
-    |> List.map ~f:coordinate_of_string
+  In_channel.read_lines "input.txt"
+  |> List.map ~f:coordinate_of_string

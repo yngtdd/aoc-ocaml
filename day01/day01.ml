@@ -2,8 +2,8 @@ open Core
 open Printf
 
 let input = 
-    In_channel.read_lines "input.txt"
-    |> List.map ~f:Int.of_string
+  In_channel.read_lines "input.txt"
+  |> List.map ~f:Int.of_string
 
 let result a b = if a < b then 1 else 0
 

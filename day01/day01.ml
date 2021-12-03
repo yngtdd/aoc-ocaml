@@ -12,6 +12,17 @@ let rec increasing acc data =
   | [] -> acc
   | [_] -> acc
   | first :: second :: rest -> increasing (acc + result first second)
-                                 (second :: rest);;
+                               (second :: rest);;
 
-printf "%d\n" (increasing 0 input)
+
+let rec three_increasing acc data = 
+  match data with 
+  | [] -> acc
+  | [_] -> acc
+  | a :: b :: c :: d :: rest -> three_increasing (acc + (result (a+b+c) (b+c+d))) 
+                        (b :: c :: d :: rest)
+  | _ -> acc
+;;
+
+printf "%d %d\n" (increasing 0 input) (three_increasing 0 input)
+

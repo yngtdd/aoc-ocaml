@@ -1,5 +1,4 @@
 open Core
-open Re
 
 type coordinate = 
   { direction : string; 

@@ -4,7 +4,7 @@ open Core
 type direction = 
   | Forward 
   | Down
-  | Up;;
+  | Up
 
 (** Construct a [direction] from [string] input *)
 let direction_of_string s =
@@ -37,3 +37,4 @@ let coordinate_of_string line =
 let input =
   In_channel.read_lines "input.txt" 
   |> List.map ~f:coordinate_of_string
+

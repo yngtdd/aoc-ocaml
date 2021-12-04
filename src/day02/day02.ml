@@ -23,7 +23,7 @@ type coordinate =
     magnitude : int 
   }
 
-  (** Construct a [coordinate] from a parsed [string] *)
+(** Construct a [coordinate] from a parsed [string] *)
 let coordinate_of_string line =
   let matches =
     let pat = "([a-zA-Z]+)[ \t]+([0-9])" in
